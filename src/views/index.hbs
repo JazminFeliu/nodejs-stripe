@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <img src="abonoTreeeco.jpg" alt="Abonos organicos Treeeco" class="card-img-top">
+            <div class="card-body">
+                <h2>$ 77</h2>
+                <p>
+                   3 dm3 de BioCompost, made in Tandil. 
+                   Biofermentos, abonos verdes, bocashi, bioles y biosoles nos permiten trabajar con los microorganismos como aliados en el proceso de compostado, ofreciendo un abono rico en nutrientes y adecuado al clima de Tandil.
+
+                </p>
+            </div>
+           
+            <div class="card-footer">
+                 <form action="checkout" method="POST">
+                <script
+                
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="public_stripe_key"
+                    data-amount="7700"
+                    data-name="Treeeco Store"
+                    data-description="Abono organico x 3 dm3"
+                    data-image="https://treeeco.herokuapp.com/images/LOGO2.jpg"
+                    data-locale="auto">
+                </script>
+                <script>
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none'
+                </script>
+                <button class="btn btn-dark btn-lg btn-block">
+                   Comprar <i class="fas fa-shopping-cart"></i>
+                </button>
+            </form>
+
+            </div>
+        </div>
+    </div>
+</div>
